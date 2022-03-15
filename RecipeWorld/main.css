@@ -1,0 +1,217 @@
+html, body, h1, h2, h3, h4, p, ol, ul, li, a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+body {
+    background: #5f5f5f url(images/more-leaves.png) top right repeat;
+    font-family: Helvetica, Arial,  "Times New Roman", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    text-decoration: none;
+    color: #7facaa;
+}
+
+h1 {
+    margin: 10px 0 15px 0;
+}
+
+h2 {
+    margin: 0 0 20px 0px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 15px 0 15px 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 3px;
+}
+
+h4 {
+    margin: 15px 0 15px 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 3px;    
+}
+
+ul, ol {
+    padding: 0 0 0 50px;
+}
+
+li {
+    text-decoration: none;
+}
+
+a   {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
+.nav {
+    padding-left: 0;
+}
+
+.nav a {
+    color: #0000AF;
+    text-decoration: none;
+}
+
+.nav li {
+    display: inline;
+}
+
+.header {
+    padding: 10px 10px 10px 10px;
+    background-color: #b56663;
+}
+.header a {
+
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.main-content {
+    width: 600px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #dddddd;
+    margin: 30px auto 0 auto;
+    background-color: #f2f2f2; 
+}
+
+.main-content p {
+    margin: 20px 0 20px 0;
+    line-height: 25px;   
+}
+
+.footer {
+    color: #aaaaaa;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.recipes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipes li {
+    border: 1px solid #b56663;
+    padding-left: 15px;
+    background-color: #ffffff;
+}
+
+.recipes h3 {
+    border-bottom: 5;
+}
+
+.recipes a {
+    text-decoration: none;
+    color: green;
+}
+
+.recipes img {
+    width: 50px;
+    float: left;
+    padding-top: 3px;
+    padding-right: 10px;
+}
+
+.header img {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.photos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.photos li {
+    display: inline;
+    padding-left: 11px;
+}
+.photos img {
+    width: 150px;
+}
+
+.featured-image {
+    width: 400px;
+    height: 400px;
+    background: #5f5f5f url(images/featuredimage.jpg);
+}
+
+.featured-image h3 {
+    margin: 0;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 5px 0 5px 15px;
+    text-transform: uppercase;
+}
+
+.suggestion-form {
+    width: 520px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #dddddd;
+    margin: 30px auto 0 auto;
+    background-color: #f2f2f2; 
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+input[type=submit] {
+    width: 120px;
+    font-size: 15px;
+}
+
+input[type=text] {
+    border: 2px solid #7facaa;
+    font-size: 25px;
+    padding: 7px    ;
+}
+
+textarea {
+    width: 500px;
+    height: 400px;
+    padding: 7px;
+    border: 2px solid #7facaa;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    display: inline;
+}
+
+label[for=newsletter] {
+    display: inline;
+
+}
