@@ -1,8 +1,13 @@
-.opening-section p {
-    text-transform: none;
-    text-align: center;
-    font-size: 1.125rem;
-    margin: 1.5rem 0;
+.nav {
+    background: linear-gradient(to bottom, #007AF3, #8ed1fc);
+    box-shadow: none;
+}
+
+.opening-section h1 {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-shadow: 0 .25rem .25rem #c2c2c2;
 }
 
 .featured-articles {
@@ -32,11 +37,18 @@
 
 .img-box {
     height: 13rem;
+    
 }
 
 .feature-article-img {
     width: 100%;
     height: 100%;
+    box-shadow: .25rem .5rem .5rem #cccccc;
+}
+
+.feature-article-img:hover {
+    box-shadow: .25rem .25rem .25rem #4b4b4b;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .articles-container {
@@ -64,6 +76,11 @@
 .article-card h2 {
     text-transform: uppercase;
     padding-bottom: 1rem;
+    color: #000000;
+}
+
+.article-card h2:hover {
+    text-shadow: 0 .1rem .1rem #c2c2c2;
 }
 
 .article-card-expand-btn {
