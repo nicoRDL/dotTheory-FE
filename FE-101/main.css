@@ -15,8 +15,7 @@ body {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     background-color: #ffffff;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin: 0 18rem;
 }
 
 .nav {
@@ -90,7 +89,8 @@ header {
 
 .opening-para h3 {
     text-align: center;
-    font-style: bold;
+    font-style: italic;
+    text-shadow: 0 .1rem .1rem #c2c2c2;
     margin: 1.5rem 0;
 }
 

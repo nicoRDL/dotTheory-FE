@@ -102,7 +102,9 @@
 .article-card-img {
     float: right;
     width: 12rem;
-    padding: 0rem 0rem 2rem 1.5rem;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0rem 1rem 1.5rem;
 }
 
 .misc-section {
