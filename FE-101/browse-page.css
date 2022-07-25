@@ -3,6 +3,10 @@
     box-shadow: none;
 }
 
+ .recentpost-tag {
+    background-color: #007AF3;
+ }
+
 .opening-section h1 {
     text-transform: uppercase;
     font-size: 1.75rem;
@@ -101,9 +105,9 @@
 
 .article-card-img {
     float: right;
-    width: 12rem;
-    height: auto;
-    overflow: hidden;
+    width: 14rem;
+    height: 9rem;
+    object-fit: cover;
     padding: 0rem 0rem 1rem 1.5rem;
 }
 
