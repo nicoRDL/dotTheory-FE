@@ -5,22 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Why Mechanical Keyboards are Better for Gaming - Clacks & Thocc</title>
 </head>
 <body>
+  <div class="nav-lip"></div>
   <nav class="nav">
-    <a class="title-logo" href="fe101-article-page.html">
+    <a class="title-logo" href="fe201-blog-homepage.html">
       Clacks&<span>Thocc</span>
     </a>
-    <img class="nav-logo" src="images/keyboard-logo.png" alt="colored keyboard logo">
+    <a class="nav-logo-link" href="fe201-blog-homepage.html">
+      <img class="nav-logo" src="images/keyboard-logo.png" alt="colored keyboard logo">
+    </a>
     <ul>
-      <li><a href="fe101-article-page.html">Home</a></li>
+      <li><a href="fe201-blog-homepage.html">Home</a></li>
+      <li><a href="fe102-browse-page.html" target="_blank">Articles</a></li>
       <li><a href="https://www.codeandtheory.com/location/manila" target="_blank">About Us</a></li>
     </ul>
+    <img class="nav-menu-button" src="images/burger-menu.png" alt="menu button">
   </nav>
+  <aside class="category-tag featured-tag">
+    <h2>
+      Category: FEATURED
+    </h2>
+  </aside>
     <div class ="grid-container">
       <section class="opening-section">
-        <header>
+        <header id="main-title">
           <h1>Why Mechanical Keyboards are Better For Gaming</h1>
         </header>
         <div class="opening-para">
@@ -148,9 +158,35 @@
             <img class="article-item-img" src="images/customizable1.jpg" alt="Pressing Multiple keys">
             <p class="article-item-text-ender">Happy Typing!</p>
           </div>
-      </main>
+        <section class="comments-section">
+          <div class="comments-section-header">
+            <h3>Start a Discussion</h3>
+            <p>Informative article? Leave a comment down below!</p>
+          </div>
+          <div class="user-comment-container">
+              <img class="user-img" src="images/user.png" alt="user profile image">
+            <textarea class="comment-textarea" name="comment-box" id="comment-box" cols="63" rows="6" placeholder="Add a comment ..."></textarea>
+            <input class="comment-button" type="button" value="Comment">
+          </div>
+          <div class="comment-card">
+            <img class="user-img" src="images/user.png" alt="user profile image">
+            <h4>username</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="comment-card">
+            <img class="user-img" src="images/user.png" alt="user profile image">
+            <h4>username</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="comment-card">
+            <img class="user-img" src="images/user.png" alt="user profile image">
+            <h4>username</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          </section>
+        </main>
       <section class="misc-section">
-        <div class="article-links-section">
+        <div class="article-links-section misc-container">
           <h3>Dig Deeper, newbie Enthusiast</h3>
           <ul class="article-links-items">
             <h4>Baby steps</h4>
@@ -164,7 +200,7 @@
           </ul>
         </div>
       
-        <div class="product-links-section">
+        <div class="product-links-section misc-container">
           <h3>Ready to clack? Try these Editors' choices</h3>
           <ol class="product-links-items">
             <li><a href="https://www.gloriousgaming.com/products/glorious-gmmk-pro-75-barebone-black" target="_blank">GLORIOUS GMMK Pro</a></li>
@@ -175,7 +211,7 @@
           </ol>
         </div>
       
-        <div class="definitions-section">
+        <div class="definitions-section misc-container">
           <h3>Jargon got you stuck? Here's a cheat sheet</h3>
           <dl>
             <dt>Mechanical</dt>
@@ -192,10 +228,10 @@
         </div>
 
         <div class="form-section">
-          <div class="user-contribution-form">
+          <div class="user-contribution-container">
             <h3>Liking the content so far? We're sure you have something better in mind.</h3>
             <p>Share your idea with us and we'll feature you in our next article. Clack away!</p>
-            <form>
+            <form class="user-form">
               <fieldset>
                 <legend>Topic Suggestion</legend>
                 <div>
