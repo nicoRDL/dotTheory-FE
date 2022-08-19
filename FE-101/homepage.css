@@ -101,14 +101,17 @@ header {
 
 .feature-section {
     background-image: url("images/customizable1.jpg");
+    background-repeat: no-repeat;
 }
 
 .recent-post-section {
     background-image: url("images/featureImage-SizeDown.jpeg");
+    background-repeat: no-repeat;
 }
 
 .featured-product-section {
     background-image: url("images/Corsair_K100_RGB.jpeg");
+    background-repeat: no-repeat;
 }
 
 .homepage-articles-section {
