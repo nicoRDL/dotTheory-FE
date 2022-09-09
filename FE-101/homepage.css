@@ -9,7 +9,10 @@
 }
 
 .categories-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    
+    /* display: block; */
     min-width: 27rem;
 }
 
@@ -62,7 +65,7 @@
 
 .homepage-articles-section {
     grid-column: 1/-1;
-    margin-top: 4rem;
+    margin-top: 1rem;
     padding-top: 0;
     border-right: none;
 }
@@ -178,6 +181,8 @@
     }
 
     .recent-post-card {
+        display: flex;
+        justify-content: space-between;
         padding-bottom: 2rem;
         margin: 0 auto;
         border-bottom: none;
@@ -186,7 +191,7 @@
     .recent-post-img {
         display: block;
         float: left;
-        width: 14rem;
+        width: 15rem;
         height: 10rem;
         padding: 0 1rem 1.5rem 0;
     }
