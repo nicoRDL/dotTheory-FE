@@ -229,7 +229,7 @@
     }
 
     .category-container {
-        background-size: 200%;
+        background-size: 175%;
     }
 
     .upper-categories {
@@ -254,7 +254,7 @@
     }
 
     .category-container:hover {
-        background-size: 150%;
+        background-size: 120%;
     }
     
     .category-container h2 {
