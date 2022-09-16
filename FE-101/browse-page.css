@@ -65,9 +65,13 @@
 
 .articles-container {
     grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5rem;
 }
 
 .articles-container-header {
+    grid-column: 1/-1;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
@@ -78,13 +82,8 @@
 }
 
 .article-card {
-    padding: 0 0 2rem 1rem;
-    border-left: 1rem solid #cccccc;
+    padding: 0 0 1rem 1rem;
     border-bottom: none;
-}
-
-.article-card:hover {
-    border-left: 1rem solid #007AF3;
 }
 
 .article-card h2 {
@@ -98,8 +97,7 @@
 }
 
 .article-card p {
-    display: block;
-    font-size: .9375rem;
+    display: none;
 }
 
 .article-card-expand-btn {
@@ -119,7 +117,7 @@
 }
 
 .article-card-img {
-    display: none;
+    width: 100%;
 }
 
 /* TABLET BREAKPOINT */
@@ -158,6 +156,7 @@
     .articles-container {
         grid-column: 1/10;
         margin-top: 2rem;
+        display: block;
     }
     
     .articles-container-header {
@@ -172,12 +171,12 @@
     
     .article-card {
         padding: 0 0 2rem 1rem;
-        border-left: .75rem solid #5e5e5e;
+        border-left: .5rem solid #5e5e5e;
         border-bottom: none;
     }
     
     .article-card:hover {
-        border-left: .75rem solid #007AF3;
+        border-left: .5rem solid #007AF3;
     }
 }
 
@@ -259,6 +258,11 @@
     
     .article-card-text h2 {
         padding-bottom: 1rem;
+    }
+
+    .article-card p {
+        display: block;
+        font-size: .9375rem;
     }
     
     .article-card-expand-btn {
