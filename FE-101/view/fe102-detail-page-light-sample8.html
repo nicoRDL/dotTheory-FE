@@ -4,54 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/light-pages.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
     <title>Sample Detail Page 8 - Clacks & Thocc</title>
   </head>
   <body>
-    <div class="nav-lip"></div>
-    <nav class="nav">
-      <a class="title-logo" href="fe201-blog-homepage.html">
-        Clacks&<span>Thocc</span>
-      </a>
-      <a class="nav-logo-link" href="fe201-blog-homepage.html">
+    <header>
+      <div class="nav-lip"></div>
+      <nav class="nav">
+        <a class="title-logo" href="fe201-blog-homepage.html">
+          Clacks&
+          <span>Thocc</span>
+        </a>
+        <a class="nav-logo-link" href="fe201-blog-homepage.html">
+          <img
+            class="nav-logo"
+            src="../images/keyboard-logo.png"
+            alt="colored keyboard logo" />
+        </a>
+        <ul>
+          <li><a href="fe201-blog-homepage.html">Home</a></li>
+          <li><a href="fe102-browse-page.html">Articles</a></li>
+          <li>
+            <a
+              href="https://www.codeandtheory.com/location/manila"
+              target="_blank">
+              About Us
+            </a>
+          </li>
+        </ul>
         <img
-          class="nav-logo"
-          src="../images/keyboard-logo.png"
-          alt="colored keyboard logo"
-        />
-      </a>
-      <ul>
-        <li><a href="fe201-blog-homepage.html">Home</a></li>
-        <li><a href="fe102-browse-page.html">Articles</a></li>
-        <li>
-          <a
-            href="https://www.codeandtheory.com/location/manila"
-            target="_blank"
-            >About Us</a
-          >
-        </li>
-      </ul>
-      <img
-        class="nav-menu-button"
-        src="../images/burger-menu.png"
-        alt="menu button"
-      />
-    </nav>
+          class="nav-menu-button"
+          src="../images/burger-menu.png"
+          alt="menu button" />
+      </nav>
+    </header>
     <aside class="category-tag featured-tag">
       <h2>Category: RECENT</h2>
     </aside>
     <div class="grid-container">
       <main class="main-content">
-        <div class="article-item">
-          <h2 class="article-item-header light-article-main-title">
+        <article class="article-item">
+          <h1 class="article-item-heading light-article-main-title">
             Benefits of Using a Compact Profile
-          </h2>
+          </h1>
           <img
             class="article-item-img"
             src="../images/featureImage-compactKeeb.jpeg"
-            alt="compact keyboard"
-          />
+            alt="compact keyboard" />
           <p class="article-item-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
@@ -109,9 +108,9 @@
             Gravida arcu ac tortor dignissim convallis aenean et. Sed vulputate
             mi sit amet mauris commodo quis.
           </p>
-        </div>
-        <div class="article-item">
-          <h3 class="article-item-header">Conclusion</h3>
+        </article>
+        <article class="article-item">
+          <h3 class="article-item-heading">Conclusion</h3>
           <p class="article-item-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
@@ -131,7 +130,7 @@
             feugiat nibh. Risus pretium quam vulputate dignissim suspendisse in
             est ante in. Sit amet nulla facilisi morbi tempus.
           </p>
-        </div>
+        </article>
         <section class="comments-section">
           <div class="comments-section-header">
             <h3>Start a Discussion</h3>
@@ -141,24 +140,23 @@
             <img
               class="user-img"
               src="../images/user.png"
-              alt="user profile image"
-            />
+              alt="user profile image" />
             <textarea
               class="comment-textarea"
               name="comment-box"
               id="comment-box"
               cols="63"
               rows="6"
-              placeholder="Add a comment ..."
-            ></textarea>
-            <input class="comment-button" type="button" value="Comment" />
+              placeholder="Add a comment ..."></textarea>
+            <button class="comment-button" type="button" value="Comment">
+              Comment
+            </button>
           </div>
           <div class="comment-card">
             <img
               class="user-img"
               src="../images/user.png"
-              alt="user profile image"
-            />
+              alt="user profile image" />
             <h4>username</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -169,8 +167,7 @@
             <img
               class="user-img"
               src="../images/user.png"
-              alt="user profile image"
-            />
+              alt="user profile image" />
             <h4>username</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -181,8 +178,7 @@
             <img
               class="user-img"
               src="../images/user.png"
-              alt="user profile image"
-            />
+              alt="user profile image" />
             <h4>username</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -192,7 +188,7 @@
         </section>
       </main>
       <section class="misc-section">
-        <div class="article-links-section">
+        <div class="article-links-section misc-container">
           <h3>Dig Deeper, newbie Enthusiast</h3>
           <ul class="article-links-items">
             <h4>Baby steps</h4>
@@ -247,18 +243,22 @@
                 </div>
               </fieldset>
               <div class="buttons-wrapper">
-                <input class="form-buttons" type="button" value="Submit" />
-                <input class="form-buttons" type="reset" value="Reset" />
+                <button class="form-buttons" type="submit" value="Submit">
+                  Submit
+                </button>
+                <button class="form-buttons" type="reset" value="Reset">
+                  Reset
+                </button>
               </div>
             </form>
           </div>
         </div>
       </section>
     </div>
-    <div class="footer">
+    <footer class="footer" role="contentinfo">
       <p>
         &copy; 2022 - Sample Article Page. Article taken from switchandclick.com
       </p>
-    </div>
+    </footer>
   </body>
 </html>

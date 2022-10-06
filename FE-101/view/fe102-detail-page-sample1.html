@@ -4,47 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
     <title>Sample Detail Page 1 - Clacks & Thocc</title>
   </head>
   <body>
-    <div class="nav-lip"></div>
-    <nav class="nav">
-      <a class="title-logo" href="fe201-blog-homepage.html">
-        Clacks&<span>Thocc</span>
-      </a>
-      <a class="nav-logo-link" href="fe201-blog-homepage.html">
+    <header>
+      <div class="nav-lip"></div>
+      <nav class="nav">
+        <a class="title-logo" href="fe201-blog-homepage.html">
+          Clacks&
+          <span>Thocc</span>
+        </a>
+        <a class="nav-logo-link" href="fe201-blog-homepage.html">
+          <img
+            class="nav-logo"
+            src="../images/keyboard-logo.png"
+            alt="colored keyboard logo" />
+        </a>
+        <ul>
+          <li><a href="fe201-blog-homepage.html">Home</a></li>
+          <li><a href="fe102-browse-page.html">Articles</a></li>
+          <li>
+            <a
+              href="https://www.codeandtheory.com/location/manila"
+              target="_blank">
+              About Us
+            </a>
+          </li>
+        </ul>
         <img
-          class="nav-logo"
-          src="../images/keyboard-logo.png"
-          alt="colored keyboard logo"
-        />
-      </a>
-      <ul>
-        <li><a href="fe201-blog-homepage.html">Home</a></li>
-        <li><a href="fe102-browse-page.html">Articles</a></li>
-        <li>
-          <a
-            href="https://www.codeandtheory.com/location/manila"
-            target="_blank"
-            >About Us</a
-          >
-        </li>
-      </ul>
-      <img
-        class="nav-menu-button"
-        src="../images/burger-menu.png"
-        alt="menu button"
-      />
-    </nav>
+          class="nav-menu-button"
+          src="../images/burger-menu.png"
+          alt="menu button" />
+      </nav>
+    </header>
     <aside class="category-tag featured-tag">
       <h2>Category: FEATURED</h2>
     </aside>
     <div class="grid-container">
       <section class="opening-section">
-        <header id="main-title">
+        <div id="main-title">
           <h1>Down-sizing your keyboard: should you even?</h1>
-        </header>
+        </div>
         <div class="opening-para">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -63,12 +64,11 @@
         <img
           class="feature-img"
           src="../images/featureImage-SizeDown.jpeg"
-          alt="two keyboard sizes"
-        />
+          alt="two keyboard sizes" />
       </section>
       <main class="main-content">
-        <div class="article-item">
-          <h2 class="article-item-header">Lorem Ipsum</h2>
+        <article class="article-item">
+          <h2 class="article-item-heading">Lorem Ipsum</h2>
           <p class="article-item-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
@@ -126,9 +126,9 @@
             Gravida arcu ac tortor dignissim convallis aenean et. Sed vulputate
             mi sit amet mauris commodo quis.
           </p>
-        </div>
-        <div class="article-item">
-          <h3 class="article-item-header">Conclusion</h3>
+        </article>
+        <article class="article-item">
+          <h3 class="article-item-heading">Conclusion</h3>
           <p class="article-item-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
@@ -151,10 +151,9 @@
           <img
             class="article-item-img"
             src="../images/customizable1.jpg"
-            alt="Pressing Multiple keys"
-          />
+            alt="Pressing Multiple keys" />
           <p class="article-item-text-ender">Go on, Size up!</p>
-        </div>
+        </article>
         <section class="comments-section">
           <div class="comments-section-header">
             <h3>Start a Discussion</h3>
@@ -164,24 +163,23 @@
             <img
               class="user-img"
               src="../images/user.png"
-              alt="user profile image"
-            />
+              alt="user profile image" />
             <textarea
               class="comment-textarea"
               name="comment-box"
               id="comment-box"
               cols="63"
               rows="6"
-              placeholder="Add a comment ..."
-            ></textarea>
-            <input class="comment-button" type="button" value="Comment" />
+              placeholder="Add a comment ..."></textarea>
+            <button class="comment-button" type="button" value="Comment">
+              Comment
+            </button>
           </div>
           <div class="comment-card">
             <img
               class="user-img"
               src="../images/user.png"
-              alt="user profile image"
-            />
+              alt="user profile image" />
             <h4>username</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -192,8 +190,7 @@
             <img
               class="user-img"
               src="../images/user.png"
-              alt="user profile image"
-            />
+              alt="user profile image" />
             <h4>username</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -204,8 +201,7 @@
             <img
               class="user-img"
               src="../images/user.png"
-              alt="user profile image"
-            />
+              alt="user profile image" />
             <h4>username</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -215,43 +211,43 @@
         </section>
       </main>
       <section class="misc-section">
-        <div class="product-links-section">
+        <div class="product-links-section misc-container">
           <h3>Ready to clack? Try these Editors' choices</h3>
           <ol class="product-links-items">
             <li>
               <a
                 href="https://www.gloriousgaming.com/products/glorious-gmmk-pro-75-barebone-black"
-                target="_blank"
-                >GLORIOUS GMMK Pro</a
-              >
+                target="_blank">
+                GLORIOUS GMMK Pro
+              </a>
             </li>
             <li>
               <a
                 href="https://rog.asus.com/ph/keyboards/keyboards/compact/rog-falchion-model/"
-                target="_blank"
-                >ASUS ROG Falcion</a
-              >
+                target="_blank">
+                ASUS ROG Falcion
+              </a>
             </li>
             <li>
               <a
                 href="https://www.keychron.com/products/keychron-k1-wireless-mechanical-keyboard"
-                target="_blank"
-                >Keychron K1 V5</a
-              >
+                target="_blank">
+                Keychron K1 V5
+              </a>
             </li>
             <li>
               <a
                 href="https://rkgamingstore.com/collections/61-keys"
-                target="_blank"
-                >RK61 60% Mechanical Keyboard</a
-              >
+                target="_blank">
+                RK61 60% Mechanical Keyboard
+              </a>
             </li>
             <li>
               <a
                 href="https://www.razer.com/gaming-keyboards/razer-huntsman-v2-tenkeyless"
-                target="_blank"
-                >RAZER Hunstman V2 Tenkeyless</a
-              >
+                target="_blank">
+                RAZER Hunstman V2 Tenkeyless
+              </a>
             </li>
           </ol>
         </div>
@@ -297,18 +293,22 @@
                 </div>
               </fieldset>
               <div class="buttons-wrapper">
-                <input class="form-buttons" type="button" value="Submit" />
-                <input class="form-buttons" type="reset" value="Reset" />
+                <button class="form-buttons" type="submit" value="Submit">
+                  Submit
+                </button>
+                <button class="form-buttons" type="reset" value="Reset">
+                  Reset
+                </button>
               </div>
             </form>
           </div>
         </div>
       </section>
     </div>
-    <div class="footer">
+    <footer class="footer" role="contentinfo">
       <p>
         &copy; 2022 - Sample Article Page. Article taken from switchandclick.com
       </p>
-    </div>
+    </footer>
   </body>
 </html>
