@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  max-width: 42rem;
+  background-color: $color-white;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media #{$tablet-bp} {
+    grid-template-columns: repeat(15, 1fr);
+    min-width: 45rem;
+    padding: 0;
+  }
+
+  @media #{$desktop-bp} {
+    grid-template-columns: repeat(20, 1fr);
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
