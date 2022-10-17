@@ -21,7 +21,7 @@
     text-transform: uppercase;
     font-size: 1.125rem;
     padding: 1rem 1rem;
-    background-color: $color-main;
+    background-color: var(--color-main);
   }
 
   h4 {
@@ -47,38 +47,41 @@
       color: #007af3;
     }
   }
-}
 
-.article-links-items {
-  h4 {
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #808080;
-  }
+  &__article-links-section {
+    .article-links-items {
+      h4 {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #808080;
+      }
 
-  li {
-    padding-top: 1.5rem;
+      li {
+        padding-top: 1.5rem;
 
-    @media #{$tablet-bp} {
-      padding: 0.75rem 0;
+        @media #{$tablet-bp} {
+          padding: 0.75rem 0;
+          line-height: 1.75rem;
+        }
+      }
     }
   }
-}
 
-.product-links-section {
-  li {
-    padding: 1rem 0;
+  &__product-links-section {
+    li {
+      padding: 1rem 0;
+    }
   }
-}
 
-.definitions-section {
-  display: none;
+  &__dictionary-section {
+    display: none;
 
-  @media #{$desktop-bp} {
-    display: block;
+    @media #{$desktop-bp} {
+      display: block;
+    }
 
     dt {
       margin: 1.25rem 2.5rem 0;
@@ -96,14 +99,14 @@
       color: #272727;
     }
   }
-}
 
-.form-section {
-  grid-column: 2/-2;
-  background-color: #f2f2f2;
+  &__form-section {
+    grid-column: 2/-2;
+    background-color: #f2f2f2;
 
-  @media #{$desktop-bp} {
-    grid-column: 13/19;
+    @media #{$desktop-bp} {
+      grid-column: 13/19;
+    }
   }
 }
 
@@ -112,7 +115,7 @@
   margin-top: 1rem;
 
   h3 {
-    background-color: $color-white;
+    background-color: var(--color-white);
     text-align: left;
     font-size: 1rem;
   }
@@ -161,9 +164,9 @@ input {
   padding: 0.5rem;
 
   &:hover {
-    background-color: $color-main;
+    background-color: var(--color-main);
     border: none;
-    color: $color-white;
+    color: var(--color-white);
   }
 }
 
@@ -193,7 +196,7 @@ input {
 
     a {
       font-size: 0.875rem;
-      border-bottom: 1px solid $color-line-border;
+      border-bottom: 1px solid var(--color-line-border);
     }
   }
 }

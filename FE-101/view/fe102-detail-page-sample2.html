@@ -11,13 +11,13 @@
     <header>
       <div class="nav-lip"></div>
       <nav class="nav">
-        <a class="title-logo" href="fe201-blog-homepage.html">
+        <a class="nav__title-logo" href="fe201-blog-homepage.html">
           Clacks&
           <span>Thocc</span>
         </a>
-        <a class="nav-logo-link" href="fe201-blog-homepage.html">
+        <a class="nav__logo-link" href="fe201-blog-homepage.html">
           <img
-            class="nav-logo"
+            class="nav__logo"
             src="../images/keyboard-logo.png"
             alt="colored keyboard logo" />
         </a>
@@ -33,20 +33,20 @@
           </li>
         </ul>
         <img
-          class="nav-menu-button"
+          class="nav__menu-button"
           src="../images/burger-menu.png"
           alt="menu button" />
       </nav>
     </header>
-    <aside class="category-tag featured-tag">
+    <aside class="category-tag category-tag--featured">
       <h2>Category: FEATURED</h2>
     </aside>
     <div class="grid-container">
       <section class="opening-section">
-        <div id="main-title">
+        <div id="main-title" class="opening-section__header">
           <h1>How to start a Clean Setup. Coffee not included.</h1>
         </div>
-        <div class="opening-para">
+        <div class="opening-section__opening-para">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
@@ -62,14 +62,14 @@
           </p>
         </div>
         <img
-          class="feature-img"
+          class="opening-section__feature-img"
           src="../images/featureImage-whiteKeeb.jpeg"
           alt="White Keyboard and clean desk" />
       </section>
       <main class="main-content">
-        <article class="article-item">
-          <h2 class="article-item-heading">Lorem Ipsum</h2>
-          <p class="article-item-text">
+        <article class="main-content__article-item">
+          <h2 class="article-item__heading">Lorem Ipsum</h2>
+          <p class="article-item__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
             nunc sed blandit libero volutpat sed cras ornare arcu. Cras sed
@@ -88,7 +88,7 @@
             feugiat nibh. Risus pretium quam vulputate dignissim suspendisse in
             est ante in. Sit amet nulla facilisi morbi tempus.
           </p>
-          <p class="article-item-text">
+          <p class="article-item__text">
             Dictumst quisque sagittis purus sit amet volutpat consequat mauris.
             Nulla aliquet enim tortor at auctor. Nisi porta lorem mollis
             aliquam. Elementum tempus egestas sed sed. Sodales neque sodales ut
@@ -127,9 +127,9 @@
             mi sit amet mauris commodo quis.
           </p>
         </article>
-        <article class="article-item">
-          <h3 class="article-item-heading">Conclusion</h3>
-          <p class="article-item-text">
+        <article class="main-content__article-item">
+          <h3 class="article-item__heading">Conclusion</h3>
+          <p class="article-item__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
             nunc sed blandit libero volutpat sed cras ornare arcu. Cras sed
@@ -149,82 +149,115 @@
             est ante in. Sit amet nulla facilisi morbi tempus.
           </p>
           <img
-            class="article-item-img"
+            class="article-item__img"
             src="../images/customizable1.jpg"
             alt="Pressing Multiple keys" />
-          <p class="article-item-text-ender">Go on, Size up!</p>
+          <p class="article-item__text-ender">Go on, Size up!</p>
         </article>
         <section class="comments-section">
-          <div class="comments-section-header">
+          <div class="comments-section__header">
             <h3>Start a Discussion</h3>
             <p>Informative article? Leave a comment down below!</p>
           </div>
-          <div class="user-comment-container">
+          <div class="comments-section__user-comment-container">
             <img
-              class="user-img"
+              class="comment__user-img"
               src="../images/user.png"
               alt="user profile image" />
             <textarea
-              class="comment-textarea"
+              class="comment__textarea"
               name="comment-box"
               id="comment-box"
               cols="63"
               rows="6"
               placeholder="Add a comment ..."></textarea>
-            <button class="comment-button" type="button" value="Comment">
+            <button class="comment__button" type="button" value="Comment">
               Comment
             </button>
           </div>
-          <div class="comment-card">
+          <div class="comments-section__comment-card">
             <img
-              class="user-img"
+              class="other-comment__user-img"
               src="../images/user.png"
               alt="user profile image" />
-            <h4>username</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <div class="other-comment__content">
+              <h4>username</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
           </div>
-          <div class="comment-card">
+          <div class="comments-section__comment-card">
             <img
-              class="user-img"
+              class="other-comment__user-img"
               src="../images/user.png"
               alt="user profile image" />
-            <h4>username</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <div class="other-comment__content">
+              <h4>username</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
           </div>
-          <div class="comment-card">
+          <div class="comments-section__comment-card">
             <img
-              class="user-img"
+              class="other-comment__user-img"
               src="../images/user.png"
               alt="user profile image" />
-            <h4>username</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <div class="other-comment__content">
+              <h4>username</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
           </div>
         </section>
       </main>
       <section class="misc-section">
-        <div class="article-links-section misc-container">
-          <h3>Dig Deeper, newbie Enthusiast</h3>
-          <ul class="article-links-items">
-            <h4>Baby steps</h4>
-            <li><a href="#">How To build a Custom Keyboard</a></li>
-            <h4>Get unstuck</h4>
-            <li><a href="#">Keyboard Error Troubleshooting for Dummies!</a></li>
-            <h4>Risk Taker?</h4>
-            <li><a href="#">Best Unorthodox Keyboard Layout</a></li>
-            <h4>Wants and wants</h4>
-            <li><a href="#">The Stabilizers you (DON'T) NEED</a></li>
-          </ul>
+        <div class="misc-section__product-links-section misc-container">
+          <h3>Ready to clack? Try these Editors' choices</h3>
+          <ol class="product-links-items">
+            <li>
+              <a
+                href="https://www.gloriousgaming.com/products/glorious-gmmk-pro-75-barebone-black"
+                target="_blank">
+                GLORIOUS GMMK Pro
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://rog.asus.com/ph/keyboards/keyboards/compact/rog-falchion-model/"
+                target="_blank">
+                ASUS ROG Falcion
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.keychron.com/products/keychron-k1-wireless-mechanical-keyboard"
+                target="_blank">
+                Keychron K1 V5
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://rkgamingstore.com/collections/61-keys"
+                target="_blank">
+                RK61 60% Mechanical Keyboard
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.razer.com/gaming-keyboards/razer-huntsman-v2-tenkeyless"
+                target="_blank">
+                RAZER Hunstman V2 Tenkeyless
+              </a>
+            </li>
+          </ol>
         </div>
-        <div class="form-section">
+        <div class="misc-section__form-section">
           <div class="user-contribution-container">
             <h3>
               Liking the content so far? We're sure you have something better in

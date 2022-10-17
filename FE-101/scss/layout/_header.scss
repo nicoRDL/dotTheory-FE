@@ -2,25 +2,11 @@
   position: sticky;
   top: 0;
   display: flex;
-  background: $color-main;
+  background: var(--color-main);
   z-index: 10;
 
-  @media #{$tablet-bp} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 100%;
-  }
-
-  @media #{$desktop-bp} {
-    position: sticky;
-    top: -5rem;
-    max-width: 69rem;
-    margin: 0 auto;
-    box-shadow: none;
-  }
-
   &--main_article {
-    box-shadow: 0 0.25rem 0.5rem $color-nav-shadow-1;
+    box-shadow: 0 0.25rem 0.5rem var(--color-nav-shadow-1);
 
     @media #{$desktop-bp} {
       box-shadow: none;
@@ -29,11 +15,11 @@
 
   &--browse {
     @extend .nav;
-    box-shadow: 0 0 0 $color-white;
+    box-shadow: 0 0 0 var(--color-white);
     background: linear-gradient(
       to bottom,
-      $color-nav-browse_hover,
-      $color-main
+      var(--color-nav-browse_hover),
+      var(--color-main)
     );
   }
 
@@ -47,7 +33,7 @@
     }
   }
 
-  &-logo {
+  &__logo {
     height: 3rem;
 
     @media #{$tablet-bp} {
@@ -61,7 +47,7 @@
     }
   }
 
-  &-logo-link {
+  &__logo-link {
     margin: 0.5rem 2rem 0.5rem 1.5rem;
 
     @media #{$tablet-bp} {
@@ -76,7 +62,7 @@
     }
   }
 
-  &-menu-button {
+  &__menu-button {
     display: block;
     height: 2rem;
     margin: 1.125rem 1.5rem 0.5rem auto;
@@ -123,13 +109,27 @@
 
     a {
       display: block;
-      color: $color-white;
-      text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+      color: var(--color-white);
+      text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
 
       @media #{$tablet-bp} {
-        color: $color-white;
+        color: var(--color-white);
       }
     }
+  }
+
+  @media #{$tablet-bp} {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 100%;
+  }
+
+  @media #{$desktop-bp} {
+    position: sticky;
+    top: -5rem;
+    max-width: 69rem;
+    margin: 0 auto;
+    box-shadow: none;
   }
 }
 
@@ -141,7 +141,7 @@
   width: 100%;
   position: absolute;
   top: 0;
-  background: $color-main;
+  background: var(--color-main);
   display: none;
 
   @media #{$desktop-bp} {
@@ -149,45 +149,42 @@
   }
 
   &--main-article {
-    @extend .nav-lip;
-    box-shadow: 0 0.25rem 0.5rem $color-nav-shadow-1;
+    box-shadow: 0 0.25rem 0.5rem var(--color-nav-shadow-1);
   }
   &--browse {
-    @extend .nav-lip;
     background: linear-gradient(
       to bottom,
-      $color-nav-browse_hover,
-      $color-main
+      var(--color-nav-browse_hover),
+      var(--color-main)
     );
   }
 
   &--homepage {
-    @extend .nav-lip;
     box-shadow: none;
   }
 }
 
-.title-logo {
+.nav__title-logo {
   display: none;
+
+  span {
+    @media #{$tablet-bp} {
+      color: var(--color-black);
+    }
+  }
 
   @media #{$tablet-bp} {
     display: block;
     grid-column: 1 / span 2;
     font-style: italic;
     font-size: 1.25rem;
-    color: $color-white;
+    color: var(--color-white);
     margin: 1.5rem 2rem;
   }
 
   @media #{$desktop-bp} {
     grid-column: 1/2;
     margin: 1.75rem 4rem 1.5rem 0;
-    color: $color-white;
-  }
-
-  span {
-    @media #{$tablet-bp} {
-      color: $color-black;
-    }
+    color: var(--color-white);
   }
 }

@@ -17,7 +17,7 @@
   align-items: center;
   border-bottom: 1px solid black;
   font-size: 1rem;
-  text-shadow: 0 0.1rem 0.1rem $color-line-border;
+  text-shadow: 0 0.1rem 0.1rem var(--color-line-border);
 
   @media #{$tablet-bp} {
     display: flex;
@@ -32,11 +32,11 @@
   }
 
   a {
-    color: $color-black;
-  }
+    color: var(--color-black);
 
-  a:hover {
-    color: $color-nav-browse_hover;
+    &:hover {
+      color: var(--color-nav-browse_hover);
+    }
   }
 
   img {

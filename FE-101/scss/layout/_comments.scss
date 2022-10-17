@@ -1,15 +1,3 @@
-.user-comment-container {
-  margin: 0;
-
-  @media #{$tablet-bp} {
-    margin-top: 1rem;
-  }
-
-  @media #{$desktop-bp} {
-    margin-top: 1.5rem;
-  }
-}
-
 .comments-section {
   grid-column: 2/9;
   margin: 2rem 0;
@@ -24,9 +12,9 @@
     padding-right: 3rem;
   }
 
-  &-header {
+  &__header {
     padding-bottom: 1rem;
-    border-bottom: 1px solid$color-line-border;
+    border-bottom: 1px solidvar(--color-line-border);
 
     h3 {
       text-transform: uppercase;
@@ -38,25 +26,75 @@
       font-size: 0.9rem;
     }
   }
-}
 
-.user-img {
-  float: left;
-  max-width: 3.5rem;
-  padding: 1rem 0.875rem;
+  &__user-comment-container {
+    margin: 0;
 
-  @media #{$tablet-bp} {
-    padding: 1rem 0.5rem;
+    @media #{$tablet-bp} {
+      margin-top: 1rem;
+    }
+
+    @media #{$desktop-bp} {
+      margin-top: 1.5rem;
+    }
   }
 
-  @media #{$desktop-bp} {
-    padding-right: 1rem;
-    width: 3rem;
+  &__comment-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solidvar(--color-line-border);
+
+    @media #{$desktop-bp} {
+      margin-top: 3rem;
+    }
+
+    .other-comment {
+      &__user-img {
+        width: 3rem;
+        height: 3rem;
+        padding: 1rem 0.875rem 1rem 0;
+
+        @media #{$desktop-bp} {
+          padding-right: 1rem;
+          width: 5rem;
+        }
+      }
+
+      &__content {
+        h4 {
+          font-size: 0.8rem;
+          color: #808080;
+        }
+
+        p {
+          line-height: 1.5rem;
+          color: #272727;
+        }
+      }
+    }
   }
 }
 
 .comment {
-  &-textarea {
+  &__user-img {
+    float: left;
+    max-width: 4rem;
+    padding: 1rem 0.875rem 1rem 0;
+
+    @media #{$tablet-bp} {
+      padding: 1rem 0.5rem;
+    }
+
+    @media #{$desktop-bp} {
+      padding-right: 1rem;
+      width: 5rem;
+    }
+  }
+
+  &__textarea {
     width: 95%;
     margin: 0 0 1rem 0;
 
@@ -65,7 +103,7 @@
     }
   }
 
-  &-button {
+  &__button {
     width: 10rem;
     font-size: 0.875rem;
     font-weight: 700;
@@ -80,29 +118,9 @@
     }
 
     &:hover {
-      background-color: $color-main;
+      background-color: var(--color-main);
       border: none;
-      color: $color-white;
-    }
-  }
-
-  &-card {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid$color-line-border;
-
-    @media #{$desktop-bp} {
-      margin-top: 3rem;
-    }
-
-    h4 {
-      font-size: 0.8rem;
-      color: #808080;
-    }
-
-    p {
-      line-height: 1.5rem;
-      color: #272727;
+      color: var(--color-white);
     }
   }
 }

@@ -1,22 +1,18 @@
 // Text
 @mixin page-main-heading {
-  padding: 2rem 0;
   text-transform: uppercase;
-  font-size: 1.375rem;
-  text-shadow: 0 0.25rem 0.25rem $color-shadow-header;
+  font-size: 1.5rem;
+  text-shadow: 0 0.25rem 0.25rem var(--color-shadow-header);
   text-align: center;
 }
 
 @mixin regular-paragraph-heading {
-  margin: 1rem auto;
-  padding-top: 1rem;
   font-size: 1.125rem;
   text-transform: uppercase;
-  text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+  text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
 }
 
 @mixin regular-paragraph-text {
-  margin: 1rem auto 2rem 0;
   font-size: 1.0625rem;
   text-align: justify;
   line-height: 2rem;
