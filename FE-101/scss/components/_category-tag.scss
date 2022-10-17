@@ -1,0 +1,21 @@
+.category-tag {
+  display: inline-block;
+  opacity: 80%;
+  margin: 1rem 3rem 0 0;
+  padding: 1rem;
+  color: var(--color-white);
+
+  @media #{$desktop-bp} {
+    position: sticky;
+    top: 1rem;
+    opacity: 100%;
+  }
+
+  &--featured {
+    background-color: var(--color-main);
+  }
+
+  &--recentpost {
+    background-color: var(--color-nav-browse_hover);
+  }
+}

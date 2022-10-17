@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&display=swap");
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+// ======================================================
+// main article page
+// ======================================================
+
+.opening-section {
+  &__header {
+    @include page-main-heading;
+    grid-column: 1/-1;
+    display: block;
+    padding: 2rem 0;
+
+    @media #{$tablet-bp} {
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    @media #{$desktop-bp} {
+      text-align: center;
+      padding: 2rem 0 4rem 0;
+      font-size: 1.75rem;
+    }
+
+    &--browse {
+      font-size: 1.75rem;
+      font-weight: 900;
+    }
+
+    &--homepage {
+      font-size: 2rem;
+      padding: 5rem 0 3rem 0;
+    }
+  }
+
+  &__opening-para {
+    display: block;
+    text-align: justify;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+
+    @media #{$tablet-bp} {
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+      max-width: 60rem;
+    }
+
+    @media #{$desktop-bp} {
+      grid-column: 1/10;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      max-width: 100%;
+    }
+
+    h3 {
+      text-align: justify;
+      font-size: inherit;
+      text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
+      margin: 1.5rem 0;
+
+      @media #{$tablet-bp} {
+        text-align: justify;
+      }
+
+      @media #{$desktop-bp} {
+        text-align: center;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.article-item {
+  &__heading {
+    @include regular-paragraph-heading;
+    margin: 0 auto 1rem auto;
+    padding-top: 1rem;
+
+    @media #{$desktop-bp} {
+      margin-bottom: 1.5rem;
+      padding-top: 0;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__text {
+    @include regular-paragraph-text;
+    margin: 1rem auto;
+
+    @media #{$tablet-bp} {
+      padding-right: 1rem;
+    }
+    @media #{$desktop-bp} {
+      padding-right: 4rem;
+    }
+  }
+
+  &__text-ender {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
+
+// ======================================================
+// browse page
+// ======================================================
+
+.feature-articles__card {
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    text-align: left;
+    margin: auto 0;
+
+    @media #{$tablet-bp} {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    @media #{$desktop-bp} {
+      font-size: 1.25rem;
+      padding: 1rem;
+      margin: 0;
+    }
+  }
+
+  a {
+    color: #272727;
+
+    @media #{$tablet-bp} {
+      display: block;
+    }
+
+    &:hover {
+      color: var(--color-nav-browse_hover);
+    }
+  }
+}
+
+.articles-container {
+  &__heading {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin: 1rem 0 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-line-border);
+
+    @media #{$tablet-bp} {
+      border-bottom: none;
+    }
+
+    @media #{$desktop-bp} {
+      font-size: 1.35rem;
+      margin-top: 0;
+      margin-bottom: 3rem;
+      border-bottom: none;
+    }
+
+    &--homepage {
+      font-size: 1.5rem;
+      padding-top: 1.5rem;
+      display: none;
+
+      @media #{$tablet-bp} {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+      }
+
+      @media #{$desktop-bp} {
+        font-size: 1.75rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+.article-card {
+  h2 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    color: var(--color-black);
+
+    &:hover {
+      text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
+    }
+  }
+
+  p {
+    display: none;
+
+    @media #{$desktop-bp} {
+      display: block;
+      font-size: 0.9375rem;
+    }
+  }
+}
+// ======================================================
+// homepage page
+// ======================================================
+
+.category__header {
+  font-size: 2.2rem;
+  text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
+  transition: color 0.5s;
+
+  @media #{$desktop-bp} {
+    font-size: 1.875rem;
+  }
+}
+
+.recent-post__body {
+  h2 {
+    color: #000000;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+
+    @media #{$desktop-bp} {
+      padding-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.about-author-section {
+  &__heading {
+    text-transform: uppercase;
+    text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
+    font-size: 1.625rem;
+    text-align: center;
+    margin: 2rem auto;
+
+    @media #{$desktop-bp} {
+      font-size: 2rem;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    line-height: 2rem;
+    color: var(--color-black);
+    font-size: 1.125rem;
+    margin: 1rem 0;
+
+    @media #{$desktop-bp} {
+      text-align: left;
+      line-height: 2.5rem;
+      font-size: 1.25rem;
+      margin: 2rem 0;
+    }
+  }
+}
+
+.author-card__content {
+  &__name {
+    font-size: 1.125rem;
+    color: #808080;
+    text-transform: uppercase;
+    padding-bottom: 0.75rem;
+
+    @media #{$desktop-bp} {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__description {
+    text-align: justify;
+    line-height: 1.5rem;
+
+    @media #{$desktop-bp} {
+      font-size: 1.125rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+// ======================================================
+// light-article page
+// ======================================================
+.light-article-main-title {
+  margin-bottom: 1rem;
+  padding-right: 4rem;
+  text-align: center;
+  font-size: 1.35rem;
+}
