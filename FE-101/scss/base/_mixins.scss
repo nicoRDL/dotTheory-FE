@@ -1,0 +1,19 @@
+// Text
+@mixin page-main-heading {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-shadow: 0 0.25rem 0.25rem var(--color-shadow-header);
+  text-align: center;
+}
+
+@mixin regular-paragraph-heading {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
+}
+
+@mixin regular-paragraph-text {
+  font-size: 1.0625rem;
+  text-align: justify;
+  line-height: 2rem;
+}

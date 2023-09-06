@@ -1,0 +1,187 @@
+// ======================================================
+// main article page
+// ======================================================
+.opening-section {
+  &__feature-img {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    @media #{$tablet-bp} {
+      margin: 3rem auto;
+    }
+
+    @media #{$desktop-bp} {
+      grid-column: 11/-1;
+      max-width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__feature-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-black);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    @media #{$tablet-bp} {
+      margin: 3rem auto;
+    }
+
+    @media #{$desktop-bp} {
+      margin-top: 0.5rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      color: var(--color-white);
+    }
+  }
+}
+
+.article-item__img {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
+  box-shadow: 0.5rem 0.5rem .5rem #dbdbdb;
+  transition: box-shadow 0.3s ease-out;
+
+  @media #{$tablet-bp} {
+    display: block;
+    margin: 1rem;
+  }
+
+  @media #{$desktop-bp} {
+    grid-column: 2/12;
+    margin: 1rem 0 2rem 0;
+  }
+
+  &:hover {
+    box-shadow: 0.5rem 0.5rem 1rem var(--color-main);
+  }
+}
+
+// ======================================================
+// browse page
+// ======================================================
+
+.img-box {
+  float: left;
+  width: 100%;
+  max-width: 16rem;
+  padding: 0 1rem 0 0;
+
+  @media #{$tablet-bp} {
+    width: 100%;
+    max-width: 45rem;
+    padding: 0 1rem 0 0;
+  }
+
+  @media #{$desktop-bp} {
+    float: none;
+    height: 14.5rem;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.feature-article-img {
+  width: 100%;
+  max-width: 15rem;
+  margin: 0 auto;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.2s ease-in-out;
+
+  @media #{$tablet-bp} {
+    max-width: inherit;
+  }
+
+  @media #{$desktop-bp} {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0.25rem 0.5rem 0.5rem var(--color-line-border);
+
+    &:hover {
+      box-shadow: 0.25rem 0.25rem 0.25rem #4b4b4b;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.article-card__img {
+  width: 100%;
+  box-shadow: 0.15rem 0.15rem 0.25rem #4b4b4b;
+
+  @media #{$desktop-bp} {
+    display: block;
+    float: right;
+    width: 14rem;
+    height: 9rem;
+    object-fit: cover;
+    margin: 0rem 1rem 1rem 1.5rem;
+  }
+}
+
+// ======================================================
+// homepage page
+// ======================================================
+
+.main-feature-img {
+  background-image: url("../images/customizable1.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.recent-post-img {
+  background-image: url("../images/featureImage-SizeDown.jpeg");
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.featured-product-img {
+  background-image: url("../images/Corsair_K100_RGB.jpeg");
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.recent-post__article-img {
+  display: none;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media #{$tablet-bp} {
+    display: block;
+    float: left;
+    width: 15rem;
+    height: 10rem;
+    padding: 0 1rem 1.5rem 0;
+  }
+
+  @media #{$desktop-bp} {
+    width: 21rem;
+    height: 100%;
+    object-fit: cover;
+    padding: 0 1.5rem 1rem 0;
+  }
+}
+
+.about-author-section img {
+  max-width: 6rem;
+  padding: 1rem;
+
+  @media #{$desktop-bp} {
+    max-width: 10rem;
+  }
+}
