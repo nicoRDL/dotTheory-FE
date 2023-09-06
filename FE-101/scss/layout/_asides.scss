@@ -148,6 +148,11 @@ label {
 
 input {
   width: 98%;
+  transition: background 0.15s ease-in;
+}
+
+input:focus {
+  background: var(--color-nav-shadow-1);
 }
 
 .buttons-wrapper {
